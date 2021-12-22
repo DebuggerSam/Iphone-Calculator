@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(127, 111, 187);
+}
+
+.container {
+  margin: 50px auto;
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 18px;
+  box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "ac plus-minus precent division"
+    "seven eight nine myltiply"
+    "four five six minus"
+    "one two three plis"
+    "zero zero dot equal";
+  grid-gap: 12px;
+  justify-items: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  filter: brightness(115%);
+}
+
+.btn:hover {
+  filter: brightness(85%);
+}
+
+.grey {
+  background-color: rgb(116, 116, 116);
+}
+
+.btn.bg-blue {
+  background-color: orange;
+}
+
+.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 1.5em;
+}
+
+.screen_container {
+  height: 110px;
+  padding: 15px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+}
+
+.screen_container > p {
+  text-align: right;
+  font-size: 4.8em;
+  margin: 0;
+  margin-bottom: 10px;
+}
